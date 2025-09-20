@@ -47,15 +47,16 @@ There are 3 different environments in git:
 	* git commit -a -m 'commit message' ---> allows you to skip the adding stage
 	* git commit -m 'commit' --amend ---> Corrects the last commit you have made
 
-<<<<<<< HEAD
-=======
 ***Resetting to a previous commit***
+
+<p>"*--soft*" and "*--hard*" are only recommended if you are working a project alone. When working on a team project, use "*git revert*" </p>
 
 	* git reset --soft commitCode ---> This allows you to go back to a certain commit you have made while still keeping the current changes you've made. It only changes the commit message and not the contents. You can find the "commitCode" by using **git log**.
 
-	*git reset --hard commitCode ---> this does the exact same as '--soft' expect all the work you have done ater that point, will be lost. This resets the stage area to that particualr point. Future work will be deleted.
+	* git reset --hard commitCode ---> this does the exact same as '--soft' expect all the work you have done ater that point, will be lost. This resets the stage area to that particualr point. Future work will be deleted.
 
->>>>>>> 9ddf805 (Git notes added)
+	* git revert commitCode ---> This will remove the change you have made but will still keep the commit message in the log. It will then create an addtional log with the update so that the team which is using the code will not run into any issues.
+
 <h2># Additional commands</h2>
 
 ***log***
