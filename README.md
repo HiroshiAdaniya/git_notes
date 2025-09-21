@@ -1,5 +1,5 @@
 # git_notes
 
-A README file
+Learn how to write readme files so that they seem more professional
 
 # end

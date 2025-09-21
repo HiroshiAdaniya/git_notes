@@ -1,13 +1,9 @@
 # git_notes
+
 <<<<<<< HEAD
--------------- its no longer delted
+A README file
 =======
-The file was deleted
-i hope this conflicts
->>>>>>> 3d46bce (comflict message added)
-this is done with git push origin master
-add to notes: when doing a normal push, it creates a branch for the person who is logged into github to resolve the conflict. the conflict will arise on github and not remotely. you'll encounter conflict when you git push origin master.
+Learn how to write readme files so that they seem more professional
+>>>>>>> 6bfac27 (finalised the last few things)
 
-a repository containing my notes for git
-alone
-
+# end
