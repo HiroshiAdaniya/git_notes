@@ -36,9 +36,13 @@ After editing, use the ***git add*** command to stage the new merge and follow u
 
 	* git pull --rebase origin branchname
 
-<p>2) Once that is completed you'll be returned a message detailing the conflicts. You'll need to resolve them with a mergetool</p>
+<p>2) Once that is completed you'll be returned a message detailing the conflicts. You'll need to resolve them with a mergetool, then add and commit them</p>
 
 	* git mergetool
+	* git add .
+		OR
+	* git add filenames
+	* git commit -m 'message'
 
 <p>3) Once you've manually resolved the issues, next you'll need to continue...</p>
 
