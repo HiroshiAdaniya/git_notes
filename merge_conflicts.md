@@ -17,6 +17,7 @@ After editing, use the ***git add*** command to stage the new merge and follow u
 	* git log --merge ---> Lists the commits that are causing the conflict
 	* git diff ---> See the difference between the files or repositories/branches
 	* get checkout ---> Allows you to undo the changes made to a file or to switch branches
+	* get checkout ---> It will return a message with the files that are conflicted. It allows you to undo the changes made to a file or to switch branches.
 	* git reset --mixed ---> This is used to undo the changes made in the current working directory and staging area
 	* git merge --abort ---> Exits our of the merging process and returns back to the oint before the merging began
 	* git reset ---> This will return the files back to their original state before there was a conflict. The current work will be lost

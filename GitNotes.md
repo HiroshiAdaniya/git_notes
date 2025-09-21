@@ -11,6 +11,9 @@
 
 <h2># Initializing a directory</h2>
 
+	* git init ---> Enter the directory you want to initialize
+	* git init directoryName ---> creates and initializes the directory/repository
+
 <h2># Configuring your environment: Setting username and email</h2>
 
 	* git config --global user.name "user name"
