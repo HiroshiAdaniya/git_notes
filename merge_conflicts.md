@@ -2,9 +2,9 @@
 
 <h3># What is a merge conflict?</h3>
 
-<p>A merge conflict is an event that happens when Git is unable to resolve difference in code between two ***commits***.
+<p>A merge conflict is an event that happens when Git is unable to resolve difference in code between two commits.
 
-For example, if you or a team member makes changes to a file on the ***Main/Master*** branch called ***index.html*** but you've already created a separate branch before the changes were made and you then start to edit the same file ***index.html*** on the additional branch, once you switch to the ***main/Master*** branch and try to merge the two branches, you'll run into a ***merge conflict*** </p>
+For example, if you or a team member makes changes to a file on the ***Main/Master*** branch called ***index.html*** but you've already created a separate branch before the changes were made, once you're done editing the file ***index.html*** and try to merge it to the branch, you'll run into a ***merge conflict*** </p>
 
 <h3># How to resolve merge conflicts?</h3>
 
