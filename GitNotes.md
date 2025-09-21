@@ -19,6 +19,28 @@
 	* git config --global user.name "user name"
 	* git config --global user.email user@email.com
 
+<h2>Creating a directory and Linking it to a repository</h2>
+
+<p>1) The first step in linking your remote directory to the cloud repository is to initialize your directory</p>
+
+	* git init
+		OR
+	* git init DirectoryName
+
+<p>2) Next you'll need link your remote setup to Github</p>
+
+	* git remote add origin https://respositoryLink ---> here we are adding our remote orgin to the link we have provided so that there is clear communication between you computer and the cloud.
+		OR
+	* git remote add origin https://**TOKEN**@repositoryLink ---> This will help bypass the issue of continously needing to add your username and token everytime you need to push
+
+<p>3) You'll need to setup an upstream to push to the repository</p>
+
+	* git push -u orign main
+		OR
+	* git push --set-upstream origin main 
+
+<h6>Notes: When setting up your directory without the token in the https://, every time you push your work it will ask for your username and token, to bypass this you'll need to navigate to the **.git** folder and edit the **config** file to add your token into the url portion between the 'https://' and the directory name. Alternatively, in step 2 you can add your token the same way you would in the config file.</h6>
+
 <h2># What is .gitignore</h2>
 
 *.gitignore* is a file that contains all the files and details git should ignore
