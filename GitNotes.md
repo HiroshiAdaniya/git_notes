@@ -33,11 +33,19 @@
 		OR
 	* git remote add origin https://**TOKEN**@repositoryLink ---> This will help bypass the issue of continously needing to add your username and token everytime you need to push
 
-<p>3) You'll need to setup an upstream to push to the repository</p>
+<p>3) The next step is to pull the contents from the repository on github to your local computer</p>
 
-	* git push -u orign main
+	* git pull origin branchName
+
+<p>4) Here is where things get a little tricky. It's important to make sure your branch name is the same as the main branch name (or whichever branch you'll be working on) on github. If you are pushing permanent changes to the source code on the branch, your branch name has to be exactly the same (case-sensitive) otherwise, when you push your files it will actually create a separate branch with your changes and the person who manages the github account will need to resolve the conflicts online.</p>
+
+	* git branch -m NewbranchName ---> This will rename or move your branch
+
+<p>5) Finally you'll need to setup an upstream to push to the repository</p>
+
+	* git push -u orign BranchName
 		OR
-	* git push --set-upstream origin main 
+	* git push --set-upstream origin BranchName 
 
 <h6>Notes: When setting up your directory without the token in the https://, every time you push your work it will ask for your username and token, to bypass this you'll need to navigate to the **.git** folder and edit the **config** file to add your token into the url portion between the 'https://' and the directory name. Alternatively, in step 2 you can add your token the same way you would in the config file.</h6>
 
