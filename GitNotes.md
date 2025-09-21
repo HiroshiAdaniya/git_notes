@@ -9,6 +9,9 @@
 
 <p>a ".git" file is created with all the configurations needed to create an environment to connect to github </p>
 
+	* git init ---> Enter the directory you want to initialize
+	* git init directoryName ---> creates and initializes the directory/repository
+
 <h2># Configuring your environment: Setting username and email</h2>
 
 	* git config --global user.name "user name"
