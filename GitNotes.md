@@ -1,7 +1,7 @@
 <h1># Git commands</h1>
 
 *git init* - This is the first step to initialize a directory as a repository.
-<h6>An important note to remember: when renaming a file or removing a file, use "git mv filename / git rm filename", rather than the usual way you have done it before. This helps clear the messages when you use *git status* which allows your chnages to be committed much easier</h6>
+<h6>An important note to remember: when renaming a file or removing a file, use "git mv filename / git rm filename", rather than the usual way you have done it before. This helps clear the messages when you use *git status* which allows your changes to be committed much easier</h6>
 
 <p>Without *git init* you are just working with a normal directory and the commands associated with *git* will not work. You won't be able to stage and commit changes to github</p>
 
@@ -28,8 +28,8 @@ There are 3 different environments in git:
 <p>This environment allows you to make edits to files</p>
 	
 	* git status ---> Allows you to see if there were modifications made to the files in the directory /  repository
-	* git diff ---> Allows you to see the actual changes made to a file
-
+	* git diff ---> Allows you to see the actual changes made to a file or changes made between branches
+	* git pull ---> This fetches updated code and content from the cloud so that you are up-to-date with everyone. Do it frequently.
 ***Staging***
 
 <p>This is the holding stage, which allows you to save your progress so that when you ready you can send it off to github</p>
