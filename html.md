@@ -1,6 +1,6 @@
 <h1># HTML, CSS and Javascript</h1>
 
-<p>Html, css and javascript are programming languages used to develop/build websites and we applications</p>
+<p>Html, css and javascript are programming languages used to develop/build websites and web applications</p>
 
 <h2>What is the basic web architecture?</h2>
 
@@ -25,7 +25,7 @@
 <p>The IP Address is where your website is hosted on and is integrated with a domain name which is easily accessed by anyone with an internet connection.</p>
 
 <h2># What is HTML?</h2>
-***HyperText Markup Language***
+**HyperText Markup Language**
 
 <p>HTML is a markup language universally used for developing web pages. Its purpose is to define structure of website and formats web pages
 	
@@ -34,16 +34,16 @@
 </p>
 
 <h2># What is CSS?</h2>
-***design language - CSS/ Cascading Style Sheet***
+**design language - CSS/Cascading Style Sheet**
 
-<p>CSS is a design language that is used to style and design your web pages to makke it look good and presentable. It can be added to any HTML element and style it to the developers choice
+<p>CSS is a design language that is used to style and design your web pages to make it look good and presentable. It can be added to any HTML element and style it to the developers choice
 
 	* file.css ---> the CSS file/styling sheet always ends in .css
 
 </p>
 
 <h2># What is Javascript?</h2>
-***Interpreted Language***
+**Interpreted Language**
 
 <p>Javascript is an interpreted language used for web development and is used to make your web pages interactive and bringing life to the application. In essence, it animates and creates motion for your web application</p>
 
@@ -64,28 +64,28 @@
 
 <p>Here is a breakdown of what each part means, what they do and how they are used</p>
 
-**<!DOCTYPE html>***
+**<!DOCTYPE html>**
 
 	* <!DOCTYPE html> ---> When collecting the data from the serve, it's an intruction to let the browser know that this document type is indeed a html file which is being served to the user.
 			  ---> This should always be include at the top of the page
-***<html></html>***
+**<html></html>**
 
 	* <html> ---> This includes all the html code. It contains and open and closing tag where the latter includes a '/' symbol to indicate the closing tag.
 		OR
 	* <html lang="eng"> ---> The first tag can also contain attrubutes which can indicate the language which the document will be used.
 
-***<head></head>***
+**<head></head>**
 
 	* <head> ---> This part of the file contains all the information about the web page such as, properties, title, css code ...etc which will be used between the opening and closing tag of the </head>
 
 		---> Bellow is the title tag, but you can also use a link to a stylesheet which can contain css code
 
-***<title></title>***
+**<title></title>**
 
 	*<title>* ---> The title tag defines the title of your web page and usually appears as the browser tab name, in search engine results and browser history/ bookmarks.
 		  ---> This is crucial for SEO and user experience
 
-***<body></body>***
+**<body></body>**
 
 	*<body>* ---> This contains all the displayable content of your web page such as; images, pharagraphs, headngs, vidoes, tables, div containers and more
 
@@ -136,7 +136,7 @@
 		color: white;
 	}
 
-<p>In CSS you also have something called a **sudo-class** in which you can add additional styling which is not recognised the general styling function. For example:</p>
+<p>In CSS you also have something called a **sudo-class** in which you can add additional styling which is not recognised in the general styling function. For example:</p>
 
 	* class
 
