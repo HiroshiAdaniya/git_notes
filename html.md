@@ -64,32 +64,32 @@
 
 <p>Here is a breakdown of what each part means, what they do and how they are used</p>
 
-**<!DOCTYPE html>**
+<h3>&lt;!DOCTYPE html&gt;</h3>
 
 	* <!DOCTYPE html> ---> When collecting the data from the serve, it's an intruction to let the browser know that this document type is indeed a html file which is being served to the user.
 			  ---> This should always be include at the top of the page
-**<html></html>**
+<h3>&lt;html&gt;&lt;/html&gt;</h3>
 
 	* <html> ---> This includes all the html code. It contains and open and closing tag where the latter includes a '/' symbol to indicate the closing tag.
 		OR
 	* <html lang="eng"> ---> The first tag can also contain attrubutes which can indicate the language which the document will be used.
 
-**<head></head>**
+<h3>&lt;head&gt;&lt;/head&gt;</h3>
 
 	* <head> ---> This part of the file contains all the information about the web page such as, properties, title, css code ...etc which will be used between the opening and closing tag of the </head>
 
 		---> Bellow is the title tag, but you can also use a link to a stylesheet which can contain css code
 
-**<title></title>**
+<h3>&lt;title&gt;&lt;/title&gt;</h3>
 
 	*<title>* ---> The title tag defines the title of your web page and usually appears as the browser tab name, in search engine results and browser history/ bookmarks.
 		  ---> This is crucial for SEO and user experience
 
-**<body></body>**
+<h3>&lt;body&gt;&lt;/body&gt;<h3>
 
 	*<body>* ---> This contains all the displayable content of your web page such as; images, pharagraphs, headngs, vidoes, tables, div containers and more
 
-<h2># Useful HTML elements</h2>
+<h3># Useful HTML elements</h3>
 
 <p>The syntax for each element in HTML has an opening and closing tag. It defines the start and the end of the element.</p>
 
@@ -103,7 +103,7 @@
 		"https://WEBSITE.com" ---> And this is the attributes value
 	* <a href="..." target="_blank">TEXT</a> ---> In this example we have added another attribute called target, and this allows the link to be opened in another window.
 
-<h2># CSS structure and Syntax</h2>
+<h3># CSS structure and Syntax</h3>
 
 	* <style>
 		button {	---> "button" is a CSS selector and indicates which element we are targeting
@@ -136,7 +136,7 @@
 		color: white;
 	}
 
-<p>In CSS you also have something called a **sudo-class** in which you can add additional styling which is not recognised in the general styling function. For example:</p>
+<p>In CSS you also have something called a **pseudo-class** in which you can add additional styling which is not recognised in the general styling function. For example:</p>
 
 	* class
 
@@ -145,15 +145,15 @@
 		color: white;
 	}
 
-	* sudo-class
+	* pseudo-class
 	
 	.button_1:hover {	---> "hover" is a functon that allows the button you are hovering over with your cursor to change color depending on the styling you have given it
 		background-color: grey;
 	}
 
-	* sudo-class
+	* pseudo-class
 
-	.button_1:active {	---> This is another sudo-class which allows the opacity to change when you are activily on the button
+	.button_1:active {	---> This is another pseudo-class which allows the opacity to change when you are activily on the button
 		opacity: 0.7;
 	}
 
@@ -161,17 +161,42 @@
 
 <p>Here is a list of some basic formatting functions in CSS that you can use to style your elements</p>
 
-	* border: value; ---> styles the border of your element
-	* height: valuepx; ---> gives height to your element using pixels
-	* width: valuepx; ---> gives width to your element using pixels
-	* color: value;	---> changes the color of the text
+<h3>Coloring, shadows, grading...</h3>
+
+	* color: value;	---> changes the color of the font
+	* background-color: color; ---> Files the background of an element
+
+	* box-shadow: 1Xpx 2Xpx 3Xpx color; ---> this creates a showdow under an element.
+					    ---> 1X = Horizontal pixels / Shadow to the right
+					    ---> 2X = Verticle pixels / Shadow downward
+					    ---> 3X = Blurring affect
+					    ---> color = color of the shadow
+			OR
+	* box-shadow: 1Xpx 2Xpx 3Xpx rgba(x, x, x, a); ---> This is similar to the example avobe, however the color value is has an added element of opacity
+					    ---> x, x, x, = the rgb color value
+					    ---> a = Opacity of the color
+
+	
+<h3>Box Elements: margins, padding, radius, etc...</h3>
+
+
+	* border: value; ---> styles the border of your element: e.g, solid or none... etc.	
+	* margin-direction: valuepx; ---> adds space outside of an element, in the direction you have specified using pixels
+	* padding-direction: valuepx: ---> adds space within the element, in the direction you have specified using pixels
+	* height: valuepx; ---> gives height to your element using pixels (usually not recommended)
+	* width: valuepx; ---> gives width to your element using pixels (usually not recommended)
 	* border-radius: valuepx; ---> curves the edges of the border using pixels
+	* verticle-align: value; ---> aligns the element in the direction you specified. By default it aligns to text
+
+<h3>Font styling</h3>
+
+	* font-weight: value; ---> Adds weight to your font, such as boldness, thickness or thins out the font.
+	* font-style: value; ---> Adds style to your font such as italic, oblique, etc...
+	* font-family: font; ---> changes the font, such as helvitca, ariel, etc...
+
+
+
+	* transition: pseudo-class value time(sec); ---> this is used to style the sudo class you have created.
 	* cursor: pointer; ---> changes the cursors icon when you are on the element
-	* margin-direction: valuepx; ---> adds space in the direction you have specified, for the element using pixels
-	* font-weight: value; ---> Adds weight to your font, such as bold, italic, etc...
-	* font-style: value; ---> changes the font of the element
-	* transition: sudo-class value time(sec); ---> this is used to style the sudo class you have created.
-
-
 	
 # end
