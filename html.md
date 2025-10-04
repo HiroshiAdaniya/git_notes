@@ -157,6 +157,17 @@
 		opacity: 0.7;
 	}
 
+<h2># CSS Box model</h2>
+
+<p>Each HTML element is basically a box. The CSS Box model is a way to define the size and spacing of that particular box. It's made up of 4 defined layers;</p>
+
+	* Content	---> The image or text
+	* Padding	---> The transparent space around the content inside the box
+	* Boarder	---> The line that goes around the padding and content
+	* Margine	---> The transparent space outside the border (pushes other elements away)
+
+![CSS Box Model](https://i.pinimg.com/originals/6d/d8/e8/6dd8e874e24d69553ffdb35ec99affbb.jpg)					
+
 <h2># Different kind of CSS styling</h2>
 
 <p>Here is a list of some basic formatting functions in CSS that you can use to style your elements</p>
