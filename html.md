@@ -166,9 +166,11 @@
 	* Boarder	---> The line that goes around the padding and content
 	* Margine	---> The transparent space outside the border (pushes other elements away)
 
-![CSS Box Model](https://i.pinimg.com/originals/6d/d8/e8/6dd8e874e24d69553ffdb35ec99affbb.jpg)					
+![CSS Box Model](https://i.pinimg.com/originals/6d/d8/e8/6dd8e874e24d69553ffdb35ec99affbb.jpg)					 
 
 <h2># Different kind of CSS styling</h2>
+
+<h3>HTML entities are special characters such as "&#10003; &#8482; &#8734;" that use specialised codes so that all browsers can identify them. If you copy and paste these symbols as text you run the risk of some browsers not being able to identify them, so using their HTML codes is preferred.</h3>
 
 <p>Here is a list of some basic formatting functions in CSS that you can use to style your elements</p>
 
