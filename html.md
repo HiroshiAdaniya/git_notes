@@ -103,6 +103,23 @@
 		"https://WEBSITE.com" ---> And this is the attributes value
 	* <a href="..." target="_blank">TEXT</a> ---> In this example we have added another attribute called target, and this allows the link to be opened in another window.
 
+<h3># Linking files and Void Elements</h3>
+
+<p>In html each element has an opening and closing tag which defines the start and end of the element, but there are elements which do not require a closing tag and they are known as **Void Elements**. Here are a few examples of void elements.</p>
+
+	* <br>	---> This is known as a line break
+	* <link rel="" href="">	---> this links a file to another file, such as a css file to an html file
+			rel=""	---> this is the relation of the file, for example "stylesheet"
+			href="" ---> This would contain the file path we are referencing
+
+<p>Some void elements can have many arguments, such the "input" element. This allows the user to interact with this element by entering data into it</p>
+
+	* <input type="" placeholder=""> ---> This creates a box element for data to be entered
+			type=""		---> This defines the type of data
+			placeholder=""  ---> Adds placeholder text
+
+<p>To style an individual element in HTML, including void elements it's important to remember to add a class to them</p>
+
 <h3># CSS structure and Syntax</h3>
 
 	* <style>
@@ -157,6 +174,14 @@
 		opacity: 0.7;
 	}
 
+<p>To target multiple elements with different classes, there is a syntax you can follow which stacks them and allows you to edit them with the same affect</p>
+
+	.class-1,	---> These elements are sepearted by a comma
+	.class-2 {
+		background-color: blue;	---> The styling we are adding to both elements
+	}
+
+
 <h2># CSS Box model</h2>
 
 <p>Each HTML element is basically a box. The CSS Box model is a way to define the size and spacing of that particular box. It's made up of 4 defined layers;</p>
@@ -168,9 +193,59 @@
 
 ![CSS Box Model](https://i.pinimg.com/originals/6d/d8/e8/6dd8e874e24d69553ffdb35ec99affbb.jpg)					 
 
+<h2># Display Properties in HTML</h2>
+
+<p>In html there are 3 different types of elements;</p>
+
+	* Block element ---> This element takes up an entire line on a webpage, such as the "<p></p>" (paragraph) element. It forces the next element to start on a new line. They sit ontop of one another
+
+		e.g
+		------------------------
+		        element
+		------------------------
+	               	element
+		------------------------
+
+	* Inline-block element ---> The element only takes up as much space as you have defined, for example "<img src="">". These elements can sit side-by-side and their width and hight can be set
+		
+		e.g
+		------------------------
+		element|element|element|
+		------------------------
+	
+	* Inline element ---> These are text elements and appear within a line of text. They take up only as much width as its content such as "<span></span>" & "<strong></strong>" They too can sit side-by-side.
+	
+		-----------------------
+		ele<span>ment</span>
+		----------------------
+
+<p>Although by default, each element falls into a particular group type there is a way to change them. For example, if you would like to change the paragraph element from a block element into an inline-block element you can code this within your css file.</p>
+
+	HTML code
+
+	* <p class="first">Hello</p>
+	  <p class="second">World!</p>
+	
+	Displayed as:
+
+	Hello
+	World!
+
+	CSS code
+
+	* .first,
+	  .second {
+	  	display: inline-block;  ---> Changes the element from a block element to inline-block element
+	  }
+
+	Displayd as:
+
+	Hello World!
+
+
 <h2># Different kind of CSS styling</h2>
 
-<h3>HTML entities are special characters such as "&#10003; &#8482; &#8734;" that use specialised codes so that all browsers can identify them. If you copy and paste these symbols as text you run the risk of some browsers not being able to identify them, so using their HTML codes is preferred.</h3>
+<h4>HTML entities are special characters such as "&#10003; &#8482; &#8734;" that use specialised codes so that all browsers can identify them. If you copy and paste these symbols as text you run the risk of some browsers not being able to identify them, so using their HTML codes are preferred.</h4>
 
 <p>Here is a list of some basic formatting functions in CSS that you can use to style your elements</p>
 
