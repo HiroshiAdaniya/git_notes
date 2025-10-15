@@ -242,6 +242,27 @@
 
 	Hello World!
 
+<h2># Div elements</h2>
+
+<p>The div element in html is essentially a container/box that is used to group other elements together to help organise a page. It's one of the most important HTML elements to understand</p>
+
+	HTML code:
+
+	* <div class="left-of-page">
+		<p class="p1">Hello World!</p>
+		<img class="image-1" src="img.png">
+	 </div>
+
+	 CSS code:
+
+	 * .left-of-page {
+	 	width: 50px;
+		display: inline-box;
+	 }
+
+<p>In the example above we have grouped together a paragraph and an image element together which can both be individually edited through their defined class. The div can be assigned it's own properties too, through it's class. The size of the div was defined and we have also changed it's default state of being a "block element" to an "inline-block element" which allows content to be stacked next to it.</p>
+
+<p>Please click here for a further breakdown of the "Div" element: [Link to div document](./div.md)</p>
 
 <h2># Different kind of CSS styling</h2>
 
