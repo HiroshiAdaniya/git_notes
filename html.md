@@ -262,14 +262,7 @@
 
 <p>In the example above we have grouped together a paragraph and an image element together which can both be individually edited through their defined class. The div can be assigned it's own properties too, through it's class. The size of the div was defined and we have also changed it's default state of being a "block element" to an "inline-block element" which allows content to be stacked next to it.</p>
 
-<p>Please click here for a further breakdown of the "Div" element:</p> 
-![Link] (./div.md)
-[link](div.md)
-[link] (div.md)
-[link] (./div.md)
-[link to div.md](./div.md)
-[link](DIV.md)
-
+<p>Please click here for a further breakdown of the "Div" element: [link to div document](https://github.com/HiroshiAdaniya/git_notes/blob/Master/div.md)</p>
 <h2># Different kind of CSS styling</h2>
 
 <h4>HTML entities are special characters such as "&#10003; &#8482; &#8734;" that use specialised codes so that all browsers can identify them. If you copy and paste these symbols as text you run the risk of some browsers not being able to identify them, so using their HTML codes are preferred.</h4>
