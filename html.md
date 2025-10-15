@@ -262,7 +262,13 @@
 
 <p>In the example above we have grouped together a paragraph and an image element together which can both be individually edited through their defined class. The div can be assigned it's own properties too, through it's class. The size of the div was defined and we have also changed it's default state of being a "block element" to an "inline-block element" which allows content to be stacked next to it.</p>
 
-<p>Please click here for a further breakdown of the "Div" element:</p> ![Link](./div.md) 
+<p>Please click here for a further breakdown of the "Div" element:</p> 
+![Link] (./div.md)
+[link](div.md)
+[link] (div.md)
+[link] (./div.md)
+[link to div.md](./div.md)
+[link](DIV.md)
 
 <h2># Different kind of CSS styling</h2>
 
