@@ -2,12 +2,13 @@
 
 <p>The Div element in HTML is a block element which helps group other elements together. A block element takes up an entire line on a page. Here is a basic syntax of a div element</p>
 
-	*html code:
+	* HTML code:
 
 	<div>
 	  code goes here
 	</div>
 
+<<<<<<< HEAD
 <p>Although a div is a block element, we can actual change it's default property into an inline-block element using a CSS code called "display". An inline-block element only takes up the space that is specified.</p>
 
 	* CSS code:
@@ -34,3 +35,6 @@
 	</div>
 
 <p>In the CSS file these divs can be styled either individually or all together. In the example above i have given them each a class to better explain how they are nested.</p>
+=======
+#end
+>>>>>>> 172579e (added ending to div.md)
