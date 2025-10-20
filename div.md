@@ -53,7 +53,7 @@
 
 <p>In your CSS file these divs can be styled either individually or all together. In the example above i have given each a class to better explain how they are nested.</p>
 
-<h2>#CSS grid</h2>
+<h2># CSS grid</h2>
 
 <p>The CSS grid is a more efficient and practical way of creating rows and columns in your html file. While individually sizing each div with CSS code, you'll most likely run into spacing and margin inconsistencies within your design. The best way to create well organized, symmetrical and evenly spaced elements is by using the CSS grid method.</p>
 
@@ -91,7 +91,7 @@
 
 So if we have specified 2 columns of 100px but have nested 4 divs into the main div, it will result in having 2 columns but instead of 1 row we will have 2 rows because of the overflow.</p>
 
-<h3>Free remaining space (fr)</h3>
+<h2># Free remaining space (fr)</h2>
 
 <p>"fr" or "free remaining space" is an argument that is passed when specifying the size of a column in the "grid-template-columns" function. What this does is that it will take cum an free remaining space on the line that has not been given a size. So if we wanted 3 columns but have only specified sizes for two of them, "fr" can be used to create another column that will take up the rest of the space. 
 
@@ -115,4 +115,16 @@ For example, if we have set the first column to 100px and the second to 50px but
 	  ...
 	 </div>
 
+<h2># Column and row gaps</h2>
+
+<p>When creating the display grid you'll notice that there are no natural space between the rows and columns. In order to create the spaces between them you will need to use the "column-gap" and "row-gap" attribute.</p>
+
+	* CSS code
+
+	.class {
+	   display: grid;
+	   grid-template-columns: 1fr 1fr 1fr;
+	   column-gap: 3px;	---> creates spaces between the columns
+	   row-gap: 6px;	---> creates spaces between the rows
+	}
 #end
