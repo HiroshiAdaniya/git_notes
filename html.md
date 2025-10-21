@@ -296,6 +296,8 @@
 
 	* border: value; ---> styles the border of your element: e.g, solid or none... etc.	
 	* margin-direction: valuepx; ---> adds space outside of an element, in the direction you have specified using pixels
+	* margin: valuepx;	---> Sets all margins to a specific size
+
 	* padding-direction: valuepx: ---> adds space within the element, in the direction you have specified using pixels
 	* height: valuepx; ---> gives height to your element using pixels (usually not recommended)
 	* width: valuepx; ---> gives width to your element using pixels (usually not recommended)

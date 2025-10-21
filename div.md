@@ -169,9 +169,21 @@ For example, if we have set the first column to 100px and the second to 50px but
 	...
 	</div>
 
-<p>In the CSS grid layout we use "1fr" to take up the free remaining space within the container, however when using flexbox when assigning free space "flex: 1" is used (the 1's are interchangeable with other digits).
+<p>In the CSS grid layout we use "1fr" to take up the free remaining space within the container, however in the flexbox when assigning free space "flex: 1" is used instead (the 1's are interchangeable with other digits). If the design calls for it, you can also limit how much space the flex size takes up, by giving it a max value.</p>
 
-Another key difference is the layout and how they perform when editing the placements of a div. In the CSS grid, because the sizes are defined in the main div, if the nested divs are moved around they do not take their sizes with them and will change accordingly</p>
+	* CSS code:
+
+	.main-div {
+	   display: flex;
+	   flex-direction: row;
+	}
+
+	.nested-div {
+	   flex: 1;
+	   max-width: 200px;
+	}
+
+<p>Another key difference is the layout and how they perform when editing the placements of a div. In the CSS grid, because the sizes are defined in the main div, if the nested divs are moved around they do not take their sizes with them and will change accordingly</p>
 
 	* CSS grid
 
@@ -254,4 +266,19 @@ Although flexbox does not perform a wrap around, you don't have to assign a size
 	   </div>
 	</div>
 
+<p>Another thing to note is how the content appears within the flexbox. There are additional arguments you can add following the "flex-direction". For example</p>
+
+	* HTML code: (with css styling)
+
+	<div style="
+	display: flex;
+	flex-directon: row;	---> Indicates the axis where the flexbox is being applied
+	justify-content: space-between;	---> Additonal stylingn added to the flexbox
+	">
+	...
+	</div>
+
+<p>In the example above "justify-content" was added, this changes how the content is spaced within the flexbox. This is just one of many ways you can manipulate the content within the flexbox.</p>
+
+<p>So in summary, when focusing on creating grids with rows and columns you'll use the CSS grid layout, when creating a single row layout and focusing on the content within it you'll use the flexbox. CSS grid is essentially a 2D grid where as a flexbox is a 1D box.</p>
 #end
