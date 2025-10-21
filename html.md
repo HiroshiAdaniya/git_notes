@@ -40,6 +40,12 @@
 
 	* file.css ---> the CSS file/styling sheet always ends in .css
 
+<p>You'll need to link your CSS files in the "head" section of your html file. It's good practice to have multiple CSS files which target specific parts of your code.</p>
+
+	<head>
+	   <link rel="stylesheet" href="filename.css">
+	</head>
+
 </p>
 
 <h2># What is Javascript?</h2>
