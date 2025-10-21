@@ -127,4 +127,131 @@ For example, if we have set the first column to 100px and the second to 50px but
 	   column-gap: 3px;	---> creates spaces between the columns
 	   row-gap: 6px;	---> creates spaces between the rows
 	}
+
+<h2># Flexbox</h2>
+
+<p>Flexbox is similar to the CSS grid, however it offers flexibility when assigning size to a div or when moving them around</p>
+
+	 * HTML code:
+
+	 <div style"
+	 display: flex
+	 flex-direction: row;">
+	   <div style="flex: 1;">
+	     flex 1
+	   </div> 
+	   <div style="flex: 2;">
+	     flex 2
+	   </div>
+	   <div style="width: 100px;">
+	     100px
+	   </div>   
+	 </div>
+
+<p>In the example above we have use CSS code display and implemented the flex style. As you can see, the main difference between the flexbox layout and the grid layout is that the size in not assigned in the main div but rather in the nested divs. For example:</p>
+
+	* CSS grid
+	
+	<div style="
+	display: grid;
+	grid-template-columns: 4xp 1fr 2fr"> 	---> sizes are defined here
+	...
+	</div>
+
+	* Flexbox
+
+	<div style="
+	display: flex;
+	flex-direction: row;">		---> Indecates the axis in which the items are placed
+	   <div style="flex: 1">	---> size/ width of the div
+	      flex 1
+	   </div>
+	...
+	</div>
+
+<p>In the CSS grid layout we use "1fr" to take up the free remaining space within the container, however when using flexbox when assigning free space "flex: 1" is used (the 1's are interchangeable with other digits).
+
+Another key difference is the layout and how they perform when editing the placements of a div. In the CSS grid, because the sizes are defined in the main div, if the nested divs are moved around they do not take their sizes with them and will change accordingly</p>
+
+	* CSS grid
+
+	<div style="
+	display: grid;
+	grid-template-columns: 100px 200px;">
+
+	   <div style="background-color: rgb(90, 90, 202)">	---> 100px
+	       Div 1
+	   </div> 
+	   <div style="background-color: rgb(172, 100, 100)">	---> 200px
+	       Div 2
+	   </div>
+
+	</div>
+
+	*** NESTED DIVS ARE SWAPPED ***
+
+	<div style="
+	display: grid;
+	grid-template-columns: 100px 200px;">
+
+	   <div style="background-color: rgb(172, 100, 100)">	---> 100px
+	       Div 2
+	   </div> 
+	   <div style="background-color: rgb(90, 90, 202)">	---> 200px
+	      Div 1
+	   </div>
+
+	</div>
+
+<p>When using the flexbox the sizes are defined within the nested divs so when you move them around, they will take their sizes with them and the layout will change</p>
+
+	* Flexbox
+
+	 <div style"
+	 display: flex
+	 flex-direction: row;">
+	   <div style="50px;">		---> 50px
+	     50px
+	   </div>
+	   <div style="10px;">		---> 10px
+     	      10px
+	   </div>
+	   <div style="width: 100px;">	---> 100px
+	     100px
+	   </div> 
+	 </div>
+
+	*** DIVS ARE SWAPPED ***
+
+	  <div style"
+	 display: flex
+	 flex-direction: row;">
+	   <div style=" width: 100px;">	---> 100px
+	     100px
+	   </div>
+	   <div style="width: 50px">	---> 50px
+	     50px
+	   </div>
+	   <div style="width: 10px">	---> 10px
+	     10px
+	   </div>
+	   
+	 </div>
+
+
+<p>CSS grid supports additional grids without adding more sizes, so when their is an excess of divs to sizes, it will wrap around to the next line, but when using the flexbox the wrap around does not happen and continues on the same line.
+
+Although flexbox does not perform a wrap around, you don't have to assign a size to the nested div. It will take up only the needed space for what is within it</p>
+
+	<div style"
+	 display: flex
+	 flex-direction: row;">
+	   <div style=" width: 100px;">	---> 100px
+	     100px
+	   </div>
+	   <div>
+	     Hello World!		---> The div will be the size of the text
+	   </div>
+	</div>
+
 #end
