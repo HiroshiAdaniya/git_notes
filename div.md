@@ -183,6 +183,23 @@ For example, if we have set the first column to 100px and the second to 50px but
 	   max-width: 200px;
 	}
 
+<h2># Stretching of element</h2>
+
+<p>When using 'fr' or "flex: value", when you resize the browser the shape of the elements using free remaining space will reform as well. There are ways to limit how far it can stretch, the minimum size it can shrink to and whether is shrinks at all. In the previous example we used "max-width" to limit the length of an element. Below is an example of how much you can shrink an element or stop the shrinking of an element</p>
+
+	* CSS code:
+
+	.flexbox {
+	   flex: 1;	---> This will alow the element to take up the remaining space
+	   width: 0;	---> Allows the element to shrink to the smallest value
+	}
+
+	.flexbox {
+	   width: 100px:
+	   flex-shrink: 0;	---> This prevents the shrinking of the element
+	}
+
+
 <p>Another key difference is the layout and how they perform when editing the placements of a div. In the CSS grid, because the sizes are defined in the main div, if the nested divs are moved around they do not take their sizes with them and will change accordingly</p>
 
 	* CSS grid

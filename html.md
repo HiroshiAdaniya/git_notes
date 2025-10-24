@@ -275,7 +275,7 @@
 
 <p>Here is a list of some basic formatting functions in CSS that you can use to style your elements</p>
 
-<h3>Coloring, shadows, grading...</h3>
+<h2># Coloring, shadows, grading...</h2>
 
 	* color: value;	---> changes the color of the font
 	* background-color: color; ---> Files the background of an element
@@ -289,30 +289,82 @@
 	* box-shadow: 1Xpx 2Xpx 3Xpx rgba(x, x, x, a); ---> This is similar to the example avobe, however the color value is has an added element of opacity
 					    ---> x, x, x, = the rgb color value
 					    ---> a = Opacity of the color
-
+	* box-shadow: inset 1px 2x 3px rgba();	---> This essenial creates a shadow inside of the element
 	
-<h3>Box Elements: margins, padding, radius, etc...</h3>
+<h2># Box Elements: margins, padding, radius, etc...</h2>
 
 
-	* border: value; ---> styles the border of your element: e.g, solid or none... etc.	
+<h3># Border </h3>
+
+	* border: value; ---> styles the border of your element: e.g, solid or none... etc.
+	* border-style: width style color;	---> This sets all three properies of a border; width, style and color
+	* border-radius: valuepx; ---> curves the edges of the border using pixels
+	* border-color: rgb;	---> defines the color of the border
+	* border-width: valuepx	---> The thickness of the border
+
+<h3># Margins</h3>
+
 	* margin-direction: valuepx; ---> adds space outside of an element, in the direction you have specified using pixels
 	* margin: valuepx;	---> Sets all margins to a specific size
+	* margin-direction: -valuepx;	---> pulls an item towards the element in the directions specified
+
+<h3># Padding </h3>
 
 	* padding-direction: valuepx: ---> adds space within the element, in the direction you have specified using pixels
+	* padding: valuepx;	---> sets all padding directons of an element to specified value
+
+
+<h3># Height and Width</h3>
+
 	* height: valuepx; ---> gives height to your element using pixels (usually not recommended)
 	* width: valuepx; ---> gives width to your element using pixels (usually not recommended)
-	* border-radius: valuepx; ---> curves the edges of the border using pixels
-	* verticle-align: value; ---> aligns the element in the direction you specified. By default it aligns to text
 
-<h3>Font styling</h3>
+<h3># Alignment and Justified</h3>
+
+	* verticle-align: value; ---> aligns the element in the direction you specified. By default it aligns to text
+	* justify-content: value;	---> Used within a flexbox, this justifies itmes within the flexbox element
+	* align-items: value; 	---> Aligns items within a flexbox
+
+<h2># Font styling</h2>
 
 	* font-weight: value; ---> Adds weight to your font, such as boldness, thickness or thins out the font.
 	* font-style: value; ---> Adds style to your font such as italic, oblique, etc...
 	* font-family: font; ---> changes the font, such as helvitca, ariel, etc...
 
+<p>To add font's that are not native to the browser, you can link different kind of fonts through your head section of your code. </p>
+
+	*HTML code: This is a google font called 'Roboto'
+
+	<head>
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+  	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  .....
+	</head>
+
+<h2># Pseudo-class and Pseudo-elements</h2>
+
+
+<p>A Pseudo-class are represented by a single colon ':' and targets a class when it is in a particular state/ condition</p>
+
+	* CSS code:
+
+	.class:pseudo-class {	---> Targeting a specific class with a pseduo-class
+	  ...			---> styling code goes here. examples are below
+	}
 
 
 	* transition: pseudo-class value time(sec); ---> this is used to style the sudo class you have created.
 	* cursor: pointer; ---> changes the cursors icon when you are on the element
 	
+<p>A Pseudo-element are represented by a double colon '::' and targets a particular section of an element.</p>
+
+	* CSS Code:
+
+	.class::psuedo-element {	---> the particular part of the element is specfied
+	   ....
+	}
+
+	* font-family: 'Roboto';	---> the font that was specified will be changed
+	* font-sizw: valuepx;		---> size of the font is changed
+
 # end
