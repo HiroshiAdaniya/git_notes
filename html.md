@@ -278,6 +278,7 @@
 <h2># Coloring, shadows, grading...</h2>
 
 	* color: value;	---> changes the color of the font
+	* white-space: nowrap; ---> prevents text inside an element from wrapping muliple lines
 	* background-color: color; ---> Files the background of an element
 
 	* box-shadow: 1Xpx 2Xpx 3Xpx color; ---> this creates a showdow under an element.
@@ -305,14 +306,15 @@
 <h3># Margins</h3>
 
 	* margin-direction: valuepx; ---> adds space outside of an element, in the direction you have specified using pixels
-	* margin: valuepx;	---> Sets all margins to a specific size
 	* margin-direction: -valuepx;	---> pulls an item towards the element in the directions specified
+	* margin: valuepx;	---> Sets all margins to a specific size
+	* margin: px px px px;  ---> Sets each direction a specific size (top, right, bottom and left)
 
 <h3># Padding </h3>
 
 	* padding-direction: valuepx: ---> adds space within the element, in the direction you have specified using pixels
 	* padding: valuepx;	---> sets all padding directons of an element to specified value
-
+	* padding: px px px px;	---> Sets the padding of each direction a specific size (tp, right, bottom, left)
 
 <h3># Height and Width</h3>
 
@@ -367,4 +369,78 @@
 	* font-family: 'Roboto';	---> the font that was specified will be changed
 	* font-sizw: valuepx;		---> size of the font is changed
 
+<h2># Media query</h2>
+
+<p>"Media query" is a responsive feature in CSS that allows you to apply different styles based on specific conditions such as; the device the user is using, viewpoint (landscape or portrait), or preferences (dark mode). They are basically If statements that checks a condition and styles appropriately.
+
+It's a way of allowing your website to look good on all devices without the need to code a different website for each screen.</p>
+
+	* CSS code:
+
+	.class {		---> A class
+		color: red;	---> we have set the text color to red
+	}
+	
+	@media (min-width: 768px) {	---> The if statement: if the screen is 768p or WIDER
+		.class {	---> we have chosen to targer the class
+			color: blue;	---> we will change the text color to blue
+		}
+	}
+<p>You can also add multiple conditions for different situations</p>
+
+	* CSS code:
+
+	.class {
+		color: red;
+	}
+
+	@media (min-width: 600px) and (max-width: 899px) {	---> Here are multiple conditions, where it checks if the width is between the min and max
+		.class {
+			color: purple;	---> it changes the color to purple
+		}
+	}
+
+
+Common Breakpoints for devices:
+
+	* Mobile device:	---> < 768px
+	* Tablet:		---> 768px - 991px
+	* Desktop: 		---> 992px -1199px
+	* Large Desktop:	---> 1200px +
+
+<h2># Advanced CSS selection</h2>
+
+<p>Advanced CSS selectors allows you target multiple classes together, certain parts of your code that might be nested, or when a certain condition is met.</p>
+
+Multiple class selection:
+
+	* CSS code:
+
+	.class1, class2,	---> Targets 3 classes at once
+	.class3 {
+		color: red;	---> changes the text to red
+	}
+
+Nested elements:
+
+	* Example 1:
+
+	.class1 img {		---> this targets all images inside class1
+		height: 50px;	---> their height will be 50px
+	}
+
+	
+	* Example 2
+
+	.class1 p,		---> targets all paragraphs in class1
+	.class2 .text {		---> and targets a class called "text" in class2
+		font-size: 10px;	---> changes their font to 10px
+		pointer-events: none;	---> disables any interaction with the mouse
+	}
+
+	* Example 3
+
+	.class1:hover .text {	---> This will targer the class "text" only when you hover over elements with class1
+		color: green;	---> changes the text to green
+	}
 # end

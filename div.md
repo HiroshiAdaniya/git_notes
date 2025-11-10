@@ -53,6 +53,50 @@
 
 <p>In your CSS file these divs can be styled either individually or all together. In the example above i have given each a class to better explain how they are nested.</p>
 
+<h2># Semantic Elements</h2>
+
+<p>Semantic elements in HTML work the same way as a div would but their main purpose is to give special meaning and structure and describes what the content is so that search engines and screen readers better understand. It also makes updates much easier.</p>
+
+Examples of Semantic elements:
+
+	* <header></header>	---> Introductory content
+	* <nav></nav>		---> navigation bar with links to home, index etc.
+	* <footer></footer>	---> End of the page with; contact info, sitemmaps etc
+	* <section></section>	---> defines a section of a webpage
+	* <main></main>		---> defines the main content of the page
+	* <aside></aside>	---> defines self contained contact such as adds, non related content
+
+
+<h2># Inheritance and CSS specificity</h2>
+
+<p>Inheritance is where properties/styles are passed down to elements that are contained within another element, such as a nested div. The styles of the main div will be passed down to the nested elements within it, however not all properties will be inherited.</p>
+
+Examples of inherited properties:
+
+	* Text properties (color, font-family, font-size.. etc)
+	* List properties (list-style, list-style-type... etc)
+	* Table properties (border-collapse, border-spacing... etc)
+	* Other properties (cursor, direction, widows... etc)
+
+Examples of non-inherited properties:
+
+	* Background, border, padding, margin, width, height... etc
+
+<p>CSS specificity is where a nested element has it's own specified properties/styling that is not the same as the inherited div. For example if the inherited property is "font-family: Arial;" but you have given the nested element a CSS specificity of"font-family: helvitca;", it will take on the later and override the inheritance.</p>
+
+	* HTML & CSS code:
+
+	<div style="			---> Main div
+	font-family: Arial;">		---> inherited property
+		<div>
+			hello!		---> will inherit Arial
+		</div>
+		<div style="		
+		font-family: Helvitica;">	---> specifity of a different font
+			world!			---> it will have the font of Helvitica
+		</div>
+	</div>
+
 <h2># CSS grid</h2>
 
 <p>The CSS grid is a more efficient and practical way of creating rows and columns in your html file. While individually sizing each div with CSS code, you'll most likely run into spacing and margin inconsistencies within your design. The best way to create well organized, symmetrical and evenly spaced elements is by using the CSS grid method.</p>
@@ -298,4 +342,5 @@ Although flexbox does not perform a wrap around, you don't have to assign a size
 <p>In the example above "justify-content" was added, this changes how the content is spaced within the flexbox. This is just one of many ways you can manipulate the content within the flexbox.</p>
 
 <p>So in summary, when focusing on creating grids with rows and columns you'll use the CSS grid layout, when creating a single row layout and focusing on the content within it you'll use the flexbox. CSS grid is essentially a 2D grid where as a flexbox is a 1D box.</p>
+
 #end
